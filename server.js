@@ -17,6 +17,8 @@ app.use(
 app.use(express.json());
 app.use(helmet());
 
+console.log("env", process.env.MONGODB_URI, process.env.PORT);
+
 connectDB(process.env.MONGODB_URI);
 
 // routes
