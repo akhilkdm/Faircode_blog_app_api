@@ -9,7 +9,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? "https://production_url.com"
+        ? "https://faircode-blog-app-frontend-r2ncgetfl-akhilk-7746s-projects.vercel.app"
         : "http://localhost:3000",
     credentials: true,
   })
