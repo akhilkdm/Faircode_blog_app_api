@@ -23,7 +23,7 @@ const getMyPosts = async (req, res) => {
 
 const getAllPosts = async (req, res) => {
   try {
-    const { page = 1, limit = 3, q } = req.query;
+    const { page = 1, limit = 10, q } = req.query;
     const { posts, total } = await postSevice.getAllPosts(page, limit);
 
     res.json({ posts, total, page: Number(page), limit: Number(limit) });
